@@ -8,87 +8,116 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
-* {margin:0; padding:0; box-sizing:border-box; font-family:'Poppins',sans-serif;}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
 body {
-  background:#0f172a;
-  color:#fff;
+  background: #f8fafc;
+  color: #0f172a;
 }
 
-section {padding:60px 10%;}
-
-h1,h2 {margin-bottom:20px;}
-
-.btn {
-  display:inline-block;
-  padding:10px 20px;
-  background:#3b82f6;
-  color:#fff;
-  text-decoration:none;
-  border-radius:5px;
-  margin:5px;
-  transition:0.3s;
-}
-
-.btn:hover {background:#2563eb;}
-
-.card {
-  background:#1e293b;
-  padding:20px;
-  border-radius:10px;
-  margin-bottom:20px;
-  transition:0.3s;
-}
-
-.card:hover {transform:translateY(-5px);}
-
-.skills span {
-  display:inline-block;
-  background:#1e293b;
-  padding:8px 12px;
-  margin:5px;
-  border-radius:5px;
-}
-
-.projects {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
-}
-
+/* NAVBAR */
 nav {
-  position:fixed;
-  width:100%;
-  top:0;
-  background:#020617;
-  padding:15px 10%;
-  display:flex;
-  justify-content:space-between;
-  z-index:1000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #ffffff;
+  padding: 15px 10%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e2e8f0;
 }
 
 nav a {
-  color:#fff;
-  margin-left:15px;
-  text-decoration:none;
+  text-decoration: none;
+  margin-left: 20px;
+  color: #0f172a;
+  font-weight: 500;
 }
 
-nav a:hover {color:#3b82f6;}
+nav a:hover {
+  color: #2563eb;
+}
 
+/* SECTIONS */
+section {
+  padding: 80px 10%;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* HERO */
 #hero {
-  padding-top:120px;
-  text-align:center;
+  padding-top: 120px;
+  text-align: center;
 }
 
-.profile-img {
-  width:140px;
-  border-radius:50%;
-  border:3px solid #3b82f6;
-  margin-bottom:20px;
+#hero p {
+  margin-top: 10px;
+  color: #475569;
 }
 
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+}
+
+/* CARDS */
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* PROJECT GRID */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* SKILLS */
+.skills span {
+  display: inline-block;
+  background: #e2e8f0;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 6px;
+}
+
+/* VIDEO */
 iframe {
-  border-radius:10px;
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  border: none;
 }
 </style>
 </head>
@@ -100,7 +129,6 @@ iframe {
   <h3>Akshat</h3>
   <div>
     <a href="#about">About</a>
-    <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#learning">Learnings</a>
     <a href="#contact">Contact</a>
@@ -109,42 +137,33 @@ iframe {
 
 <!-- HERO -->
 <section id="hero">
-
   <h1>Hi, I'm Akshat 👋</h1>
-  <h2>B.Tech CSE (AI/ML) Student</h2>
-  <p>I build responsive and modern websites using HTML, CSS, and JavaScript.</p>
+  <p>Frontend Developer passionate about building clean and responsive websites.</p>
 
   <a href="#projects" class="btn">View Projects</a>
-  <a href="#contact" class="btn">Contact Me</a>
+  <a href="https://www.linkedin.com/in/akshat-aggarwal-b63840302" target="_blank" class="btn">
+    LinkedIn
+  </a>
 </section>
 
 <!-- ABOUT -->
 <section id="about">
   <h2>About Me</h2>
   <p>
-   Hi, Im Akshat, a 2nd year B.Tech CSE student at Graphic Era Hill University.
-
-Im deeply interested in software development and problem-solving, and Ive been consistently working towards building a strong foundation in Data Structures & Algorithms along with real-world development skills.
-
-I have solved around 100 DSA problems across platforms and Im comfortable with concepts like arrays, strings, recursion, and basic dynamic programming. Alongside this, Ive built projects using technologies like [your tech stack — e.g., MERN / Java / Python], which helped me understand practical aspects of development such as APIs, databases, and clean code practices.
-
-Im someone who believes in consistent improvement, so I regularly practice coding, explore new technologies, and try to build meaningful projects rather than just theoretical knowledge.
-
-My goal is to secure a software engineering role at top product-based companies like,  or where I can contribute, learn from experienced engineers, and grow in a challenging environment.
-
-Id really appreciate any guidance, feedback, or opportunities you could share.
+    I'm a B.Tech 2nd year student (CSE AIML) at Graphic Era Hill University.
+    I'm passionate about frontend development and currently learning React.
   </p>
 </section>
 
 <!-- SKILLS -->
-<section id="skills">
+<section>
   <h2>Skills</h2>
   <div class="skills">
     <span>HTML</span>
     <span>CSS</span>
     <span>JavaScript</span>
     <span>React</span>
-    <span>Git DSA</span>
+    <span>Git</span>
     <span>GitHub</span>
   </div>
 </section>
@@ -157,17 +176,21 @@ Id really appreciate any guidance, feedback, or opportunities you could share.
     <div class="card">
       <h3>To-Do App</h3>
       <p>Task manager with local storage.</p>
-      <p><strong>Tech:</strong> JavaScript</p>
+      <a href="https://github.com/aggarwalakshatvir-design" target="_blank" class="btn">View Code</a>
     </div>
 
     <div class="card">
       <h3>Weather App</h3>
       <p>Weather app using API.</p>
-      <p><strong>Tech:</strong> JavaScript, API</p>
+      <a href="https://github.com/aggarwalakshatvir-design" target="_blank" class="btn">View Code</a>
     </div>
 
   </div>
 </section>
+
+<!-- LEARNINGS -->
+<section id="learning">
+  <h2>Learnings</h2>
 
 <!-- LEARNINGS -->
 <section id="learning">
@@ -188,50 +211,39 @@ In the third class, we completed a self-profiling sheet given by ma’am. Throug
 
 <!-- VIDEO -->
 <section>
-  <h2>🎥 Self Introduction Video</h2>
-
+  <h2>Self Introduction Video</h2>
   <div class="card">
-    <iframe 
-      src="https://drive.google.com/file/d/1KrNZ0s9OMHFXsbgV4CceWFuOuAlbxdNn/preview"
-      width="100%" 
-      height="300"
-      allow="autoplay">
-    </iframe>
+    <iframe src="https://drive.google.com/file/d/1KrNZ0s9OMHFXsbgV4CceWFuOuAlbxdNn/preview"></iframe>
   </div>
-
 </section>
+
+<!-- ASSIGNMENT -->
 <section>
-  <h2>📄 Assignments</h2>
-
+  <h2>Assignment</h2>
   <div class="card">
-    <p>Profiling Sheet Assignment</p>
-
-    <a href="https://drive.google.com/file/d/1cE6Itq33h8DHOX8gNOI1xLGyfpQjP2KW/view?usp=drivesdk" 
-       target="_blank" 
-       class="btn">
-       View Assignment
+    <a href="https://drive.google.com/file/d/1cE6Itq33h8DHOX8gNOI1xLGyfpQjP2KW/view?usp=drivesdk" target="_blank" class="btn">
+      View Assignment
     </a>
   </div>
-
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
   <h2>Contact</h2>
+
   <p>Email: aggarwalakshat.vir@gmail.com</p>
-  <p>contact no: 9760026846</p>
-  <p>
-  LinkedIn:
-  <a href="https://www.linkedin.com/in/akshat-aggarwal-b63840302" target="_blank">
-    Visit My LinkedIn
-  </a>
-</p>
+
   <p>
     GitHub:
     <a href="https://github.com/aggarwalakshatvir-design" target="_blank">
       github.com/aggarwalakshatvir-design
     </a>
   </p>
+
+  <a href="https://www.linkedin.com/in/akshat-aggarwal-b63840302" target="_blank" class="btn">
+    LinkedIn Profile
+  </a>
+
 </section>
 
 </body>
